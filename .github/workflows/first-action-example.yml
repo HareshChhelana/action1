@@ -1,0 +1,12 @@
+name: First Action Example
+on: push
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Welcome Message
+              run: echo "My first action example"
+            - name: List Files
+              run: ls -al
+            - name: Read File
+              run: cat README.md
